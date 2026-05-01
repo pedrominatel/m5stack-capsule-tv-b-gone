@@ -11,6 +11,7 @@ sdkconfig.ci
 # IDE/editor settings
 .vscode/
 .idea/
+.cache/
 
 # OS files
 .DS_Store
