@@ -24,7 +24,8 @@ TV-B-Gone is an open-source project that uses infrared (IR) to send power-off co
    git clone https://github.com/pedrominatel/m5stack-capsule-tv-b-gone.git
    cd m5stack-capsule-tv-b-gone
    ```
-3. Build and flash the project:
+3. Optionally adjust the Capsule GPIOs in `idf.py menuconfig` under `M5Capsule TV-B-Gone Configuration`.
+4. Build and flash the project:
    ```bash
    idf.py set-target esp32s3
    idf.py build flash monitor
@@ -32,7 +33,12 @@ TV-B-Gone is an open-source project that uses infrared (IR) to send power-off co
 
 ## Usage
 
-Once flashed, the device will start sending TV power-off IR codes automatically. Point the M5Stack Capsule at a TV and it will cycle through all codes until the TV turns off.
+Once flashed, the device keeps itself powered by asserting the configured `HOLD` GPIO and waits for a button click.
+
+- Click the wake button to start the sequence.
+- The RGB LED turns blue while EU codes are sent.
+- The RGB LED turns red while NA/US codes are sent.
+- After all codes finish, the RGB LED turns green for 5 seconds and the device powers itself off.
 
 ## License
 

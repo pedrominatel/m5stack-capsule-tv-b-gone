@@ -1,0 +1,31 @@
+menu "M5Capsule TV-B-Gone Configuration"
+
+    config TVBG_HOLD_GPIO
+        int "HOLD GPIO"
+        range 0 48
+        default 46
+        help
+            GPIO used to keep the board powered on.
+
+    config TVBG_BUTTON_GPIO
+        int "Wake button GPIO"
+        range 0 48
+        default 42
+        help
+            GPIO connected to the Capsule wake button.
+
+    config TVBG_IR_TX_GPIO
+        int "IR TX GPIO"
+        range 0 48
+        default 4
+        help
+            GPIO connected to the built-in IR emitter.
+
+    config TVBG_RGB_LED_GPIO
+        int "RGB LED GPIO"
+        range 0 48
+        default 21
+        help
+            GPIO connected to the built-in RGB LED data line.
+
+endmenu
