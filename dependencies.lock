@@ -1,0 +1,20 @@
+dependencies:
+  idf:
+    source:
+      type: idf
+    version: 5.5.1
+  pedrominatel/tv-b-gone:
+    component_hash: 0ff108b8097a23d7ef01ea0ed5ac8cc80d03301cbcb3bccb0388543a4986e907
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=5.5'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 0.3.0
+direct_dependencies:
+- pedrominatel/tv-b-gone
+manifest_hash: c4b598777ab24773c9f04330a4579e82d62bc34ec2449be9d5d610704fc75b0e
+target: esp32s3
+version: 2.0.0
