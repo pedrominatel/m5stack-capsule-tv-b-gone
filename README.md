@@ -1,6 +1,6 @@
 # M5Stack Capsule TV-B-Gone
 
-This project is a **TV-B-Gone** implementation for the [M5Stack Capsule](https://docs.m5stack.com/en/core/M5Capsule) (ESP32-S3). It uses the [TV-B-Gone component](https://components.espressif.com/components/pedrominatel/tv_b_gone) from the [ESP-IDF Component Registry](https://components.espressif.com/) to send IR power-off signals to a wide range of TVs.
+This project is a **TV-B-Gone** implementation for the [M5Stack Capsule](https://docs.m5stack.com/en/core/M5Capsule) (ESP32-S3). It uses the [TV-B-Gone component](https://components.espressif.com/components/pedrominatel/tv-b-gone/versions/0.3.0/readme) from the [ESP-IDF Component Registry](https://components.espressif.com/) to send IR power-off signals to a wide range of TVs.
 
 It is inspired by the original [TV-B-Gone project by Mitch Altman](https://www.tvbgone.com/).
 
@@ -31,7 +31,7 @@ Default GPIO assignments in this project:
 ## Requirements
 
 - [ESP-IDF](https://github.com/espressif/esp-idf) v5.0 or later
-- [TV-B-Gone component](https://components.espressif.com/components/pedrominatel/tv_b_gone) (from the ESP-IDF Component Registry)
+- [TV-B-Gone component](https://components.espressif.com/components/pedrominatel/tv-b-gone/versions/0.3.0/readme) (from the ESP-IDF Component Registry)
 
 ## Getting Started
 
