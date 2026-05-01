@@ -1,2 +1,4 @@
 dependencies:
+  espressif/button: "^4.1.6"
+  espressif/led_strip: "^3.0.1"
   pedrominatel/tv-b-gone: "^0.3.0"
